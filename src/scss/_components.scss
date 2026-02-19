@@ -1,0 +1,48 @@
+.card {
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+}
+
+.btn {
+  border: 0;
+  padding: .9rem 1.1rem;
+  border-radius: 14px;
+  cursor: pointer;
+  background: rgba(255,255,255,.12);
+  color: white;
+
+  // transition (krav)
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+
+  &:hover {
+    // transform (krav)
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    background: rgba(255,255,255,.16);
+  }
+
+  &:active { transform: translateY(0) scale(.98); }
+}
+
+.card--hover {
+  transition: transform 250ms ease, filter 250ms ease;
+  &:hover { transform: scale(1.02); filter: brightness(1.1); }
+}
+
+.tile {
+  margin-top: .8rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  user-select: none;
+  transition: transform 240ms ease;
+}
+
+.card--tilt:hover .tile {
+  transform: rotate(-1.5deg) scale(1.02);
+}
+
+.tile.is-flip { transform: rotateY(180deg); }

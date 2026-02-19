@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animering</title>
+</head>
+<body>
+  <header class="site-header" id="header">
+    <nav class="nav">
+      <a class="nav__logo" href="./index.html">Min Webb</a>
+      <ul class="nav__list">
+        <li><a href="./index.html">Hem</a></li>
+        <li><a class="is-active" href="./animering.html">Animering</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page--anim">
+    <section class="hero">
+      <h1 class="hero__title"><span class="glow-text">CSS</span> Animationer</h1>
+      <p class="hero__lead">Keyframes + transition + transform + JS-interaktion.</p>
+
+      <button class="btn" id="confettiBtn" type="button">Klicka för effekt</button>
+      <div class="burst" id="burst" aria-hidden="true"></div>
+    </section>
+
+    <section class="grid">
+      <article class="card card--hover">
+        <h2>Textanimation</h2>
+        <p class="muted">Glöd med @keyframes.</p>
+      </article>
+
+      <article class="card">
+        <h2>Rörligt objekt</h2>
+        <p class="muted">Bollen rör sig över sidan.</p>
+        <div class="track" aria-hidden="true">
+          <div class="ball"></div>
+        </div>
+      </article>
+
+      <article class="card card--tilt">
+        <h2>Användarinteraktion</h2>
+        <p class="muted">Hover + klick (JS togglar klass).</p>
+        <div class="tile" id="tile" role="button" tabindex="0">Hovra / klicka mig</div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Moment 4 – Animering</small>
+  </footer>
+
+  <script type="module" src="/src/js/animering.js"></script>
+</body>
+</html>
