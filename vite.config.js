@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, "src/pages/index.html"),
         animering: resolve(__dirname, "src/pages/animering.html"),
+        base: "/laboration-4/"
       },
     },
   },
